@@ -37,7 +37,7 @@ export default function DashboardPage() {
   useEffect(() => {
     const fetchUsersCount = async () => {
       try {
-        const response = await fetch('http://localhost:3000/api/users/count'); // Adjust endpoint as per backend
+        const response = await fetch('https://askatease-adminpage-backend.onrender.com/api/users/count'); // Adjust endpoint as per backend
         if (!response.ok) {
           throw new Error('Failed to fetch users count');
         }
@@ -57,7 +57,7 @@ export default function DashboardPage() {
 useEffect(() => {
   const fetchAnswersCount = async () => {
     try {
-      const response = await fetch('http://localhost:3000/api/answers/count'); // Adjust endpoint as per backend
+      const response = await fetch('https://askatease-adminpage-backend.onrender.com/api/answers/count'); // Adjust endpoint as per backend
       if (!response.ok) {
         throw new Error('Failed to fetch answers count');
       }
@@ -78,7 +78,7 @@ stats[2].value = answersCount;
     const fetchQuestionsCount = async () => {
       try {
         // const response = await fetch('/api/questions/count'); // Adjust endpoint as per backend
-        const response = await fetch('http://localhost:3000/api/questions/count');
+        const response = await fetch('https://askatease-adminpage-backend.onrender.com/api/questions/count');
         if (!response.ok) {
           throw new Error('Failed to fetch questions count');
         }

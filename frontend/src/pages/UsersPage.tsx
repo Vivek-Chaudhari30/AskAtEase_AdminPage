@@ -30,7 +30,7 @@ export default function UsersPage() {
     // Fetch user data from backend API
     async function fetchUsers() {
       try {
-        const response = await fetch('http://localhost:3000/api/users'); // Adjust endpoint as per backend
+        const response = await fetch('https://askatease-adminpage-backend.onrender.com/api/users'); // Adjust endpoint as per backend
         // const response = await fetch(''); // /api/users Update the API endpoint if needed
         if (!response.ok) {
           throw new Error('Failed to fetch users');
@@ -78,7 +78,7 @@ export default function UsersPage() {
 // useEffect(() => {
 //   const fetchAnswersCount = async () => {
 //     try {
-//       const response = await fetch('http://localhost:3000/api/answers/count'); // Adjust endpoint as per backend
+//       const response = await fetch('https://askatease-adminpage-backend.onrender.com/api/answers/count'); // Adjust endpoint as per backend
 //       if (!response.ok) {
 //         throw new Error('Failed to fetch answers count');
 //       }
@@ -99,7 +99,7 @@ export default function UsersPage() {
 //     const fetchQuestionsCount = async () => {
 //       try {
 //         // const response = await fetch('/api/questions/count'); // Adjust endpoint as per backend
-//         const response = await fetch('http://localhost:3000/api/questions/count');
+//         const response = await fetch('https://askatease-adminpage-backend.onrender.com/api/questions/count');
 //         if (!response.ok) {
 //           throw new Error('Failed to fetch questions count');
 //         }
@@ -223,7 +223,7 @@ export default function UsersPage() {
 //   useEffect(() => {
 //     async function fetchUsers() {
 //       try {
-//         const response = await fetch('http://localhost:3000/api/users'); // Adjust endpoint if needed
+//         const response = await fetch('https://askatease-adminpage-backend.onrender.com/api/users'); // Adjust endpoint if needed
 //         if (!response.ok) {
 //           throw new Error('Failed to fetch users');
 //         }
